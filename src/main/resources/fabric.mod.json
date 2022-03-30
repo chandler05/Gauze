@@ -1,29 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
+  "id": "patchwork",
+  "version": "${1.0}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Patchwork",
+  "description": "Patchwork is a Fabric mod for Minecraft that focuses on using Mixins to fix as many bugs in the Vanilla game as possible.",
   "authors": [
-    "Me!"
+    "Chandler"
   ],
-  "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
-  },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/patchwork/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.fabricmc.patchwork.Main"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "patchwork.mixins.json"
   ],
 
   "depends": {

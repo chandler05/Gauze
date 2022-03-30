@@ -1,9 +1,12 @@
-# Fabric Example Mod
+# Patchwork
 
-## Setup
+## About
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+Patchwork is a Fabric mod for Minecraft that focuses on using Mixins to fix as many bugs in the Vanilla game as possible.
 
-## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+
+
+## List of Fixes:
+
+MC-116379 - Punching with a cast fishing rod in the off-hand detaches fishing line from rod
