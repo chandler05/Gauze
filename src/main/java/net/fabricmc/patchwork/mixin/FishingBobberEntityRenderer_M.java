@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 public abstract class FishingBobberEntityRenderer_M {
 
     //MC-116379
-    @ModifyVariable(method = "render", name = "h", at = @At(value = "STORE", ordinal = 0))
+    @ModifyVariable(method = "render", ordinal = 2, at = @At(value = "STORE", ordinal = 0))
     private float swingProg(float p, FishingBobberEntity fishingBobberEntity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
         PlayerEntity pE = fishingBobberEntity.getPlayerOwner();
         ItemStack itemStack = pE.getMainHandStack();

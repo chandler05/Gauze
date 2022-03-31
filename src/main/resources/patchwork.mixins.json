@@ -4,7 +4,8 @@
   "package": "net.fabricmc.patchwork.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "FishingBobberEntityRenderer_M"
+    "FishingBobberEntityRenderer_M",
+    "Keyboard_M"
   ],
   "client": [],
   "injectors": {
