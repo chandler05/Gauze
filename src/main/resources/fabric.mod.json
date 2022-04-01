@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "patchwork",
+  "id": "gauze",
   "version": "${1.0}",
 
-  "name": "Patchwork",
-  "description": "Patchwork is a Fabric mod for Minecraft that focuses on using Mixins to fix as many bugs in the Vanilla game as possible.",
+  "name": "Gauze",
+  "description": "Gauze is a Fabric mod for Minecraft that focuses on using Mixins to fix as many bugs in the Vanilla game as possible.",
   "authors": [
     "Chandler"
   ],
 
   "license": "CC0-1.0",
-  "icon": "assets/patchwork/icon.png",
+  "icon": "assets/gauze/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.patchwork.Main"
+      "net.fabricmc.gauze.Main"
     ]
   },
   "mixins": [
-    "patchwork.mixins.json"
+    "gauze.mixins.json"
   ],
 
   "depends": {

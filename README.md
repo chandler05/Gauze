@@ -1,8 +1,8 @@
-# Patchwork
+# Gauze
 
 ## About
 
-Patchwork is a Fabric mod for Minecraft that focuses on using Mixins to fix as many bugs in the Vanilla game as possible.
+Gauze is a Fabric mod for Minecraft that focuses on using Mixins to fix as many bugs in the Vanilla game as possible.
 
 
 

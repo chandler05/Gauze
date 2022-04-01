@@ -1,4 +1,4 @@
-package net.fabricmc.patchwork.mixin;
+package net.fabricmc.gauze.mixin;
 
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.FishingBobberEntityRenderer;

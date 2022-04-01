@@ -1,4 +1,4 @@
-package net.fabricmc.patchwork.mixin;
+package net.fabricmc.gauze.mixin;
 
 import net.minecraft.client.Keyboard;
 import net.minecraft.client.MinecraftClient;
