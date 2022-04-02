@@ -11,10 +11,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(MobEntity.class)
 public class MobEntity_M {
-    @Shadow protected Entity holdingEntity;
+    @Shadow
+    private Entity holdingEntity;
 
     //MC-16663
-    @Inject(method = "detachLeash", at = @At("HEAD"), cancellable = true)
+    @Inject(method = "detachLeash", at = @At("HEAD"))
     private void detachLeash(boolean sendPacket, boolean dropItem, CallbackInfo ci) {
         if (holdingEntity != null && holdingEntity instanceof LeashKnotEntity) {
             this.holdingEntity.discard();

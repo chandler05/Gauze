@@ -4,10 +4,11 @@
   "package": "net.fabricmc.gauze.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "CreeperEntity_M",
     "FishingBobberEntityRenderer_M",
     "Keyboard_M",
     "MobEntity_M",
-    "CreeperEntity_M"
+    "PathAwareEntity_M"
   ],
   "client": [],
   "injectors": {

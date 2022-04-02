@@ -8,6 +8,8 @@ Gauze is a Fabric mod for Minecraft that focuses on using Mixins to fix as many 
 
 
 ## List of Fixes:
+MC-14167 - Mobs build up fall damage when dangling on a lead
+
 MC-16663 - Lead remains attached to the fence when the mob is killed
 
 MC-116379 - Punching with a cast fishing rod in the off-hand detaches fishing line from rod
