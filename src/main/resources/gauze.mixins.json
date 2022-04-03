@@ -8,7 +8,8 @@
     "FishingBobberEntityRenderer_M",
     "Keyboard_M",
     "MobEntity_M",
-    "PathAwareEntity_M"
+    "PathAwareEntity_M",
+    "ServerPlayNetworkHandler_M"
   ],
   "client": [],
   "injectors": {
