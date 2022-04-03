@@ -51,17 +51,15 @@ public abstract class ServerPlayNetworkHandler_M {
         BlockHitResult blockHitResult = packet.getBlockHitResult();
         Direction direction = blockHitResult.getSide();
         BlockPos blockPos = blockHitResult.getBlockPos();
-        ServerWorld serverWorld = this.player.getWorld();
         Hand hand = packet.getHand();
         ItemStack itemStack = this.player.getStackInHand(hand);
-        ActionResult actionResult = this.player.interactionManager.interactBlock(this.player, serverWorld, itemStack, hand, blockHitResult);
-        if (!changed && direction == Direction.DOWN && !actionResult.isAccepted() && blockPos.getY() <= j && canPlace(this.player, itemStack)) {
+        if (!changed && direction == Direction.DOWN && !instance.isAccepted() && blockPos.getY() <= j && canPlace(this.player, itemStack)) {
             Text text2 = (new TranslatableText("build.tooLow", new Object[]{j})).formatted(Formatting.RED);
             this.player.sendMessage(text2, MessageType.GAME_INFO, Util.NIL_UUID);
             return false;
         } else if (changed) {
             return false;
         }
-        return actionResult.shouldSwingHand();
+        return instance.shouldSwingHand();
     }
 }
