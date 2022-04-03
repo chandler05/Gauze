@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "CreeperEntity_M",
+    "EntityRenderer_M",
     "FishingBobberEntityRenderer_M",
     "Keyboard_M",
     "MobEntity_M",
