@@ -4,6 +4,7 @@
   "package": "net.fabricmc.gauze.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "AbstractBlockState_M",
     "CreeperEntity_M",
     "EntityRenderer_M",
     "FishingBobberEntityRenderer_M",
