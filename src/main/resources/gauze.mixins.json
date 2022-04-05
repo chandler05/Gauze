@@ -6,14 +6,16 @@
   "mixins": [
     "AbstractBlockState_M",
     "CreeperEntity_M",
-    "EntityRenderer_M",
-    "FishingBobberEntityRenderer_M",
-    "Keyboard_M",
     "MobEntity_M",
-    "PathAwareEntity_M",
+    "PathAwareEntity_M"
+  ],
+  "client": [
+    "PersistentProjectileEntity_M",
+    "FishingBobberEntityRenderer_M",
+    "EntityRenderer_M",
+    "Keyboard_M",
     "ServerPlayNetworkHandler_M"
   ],
-  "client": [],
   "injectors": {
     "defaultRequire": 1
   }
