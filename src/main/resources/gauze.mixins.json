@@ -10,10 +10,10 @@
     "PathAwareEntity_M"
   ],
   "client": [
-    "PersistentProjectileEntity_M",
-    "FishingBobberEntityRenderer_M",
     "EntityRenderer_M",
+    "FishingBobberEntityRenderer_M",
     "Keyboard_M",
+    "PersistentProjectileEntity_M",
     "ServerPlayNetworkHandler_M"
   ],
   "injectors": {

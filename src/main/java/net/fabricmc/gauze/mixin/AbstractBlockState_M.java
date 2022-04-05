@@ -14,6 +14,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(AbstractBlock.AbstractBlockState.class)
@@ -36,7 +37,7 @@ public abstract class AbstractBlockState_M {
             BlockEntity blockEntity = world.getBlockEntity(pos);
             if (blockEntity instanceof CampfireBlockEntity cBE) {
                 int lit = this.asBlockState().get(CampfireBlock.LIT) ? 1 : 0;
-                int signal = this.asBlockState().get(CampfireBlock.SIGNAL_FIRE) ? 1 : 0;
+                int signal = this.asBlockState().get(CampfireBlock.SIGNAL_FIRE) && lit == 1 ? 1 : 0;
                 DefaultedList<ItemStack> food = cBE.getItemsBeingCooked();
                 int foodFound = 0;
                 for (ItemStack itemStack : food) {
@@ -47,6 +48,12 @@ public abstract class AbstractBlockState_M {
                 int output = (foodFound * 3) + lit + signal;
                 cir.setReturnValue(output);
             }
+        }
+    }
+    @Inject(method = "onStateReplaced", at = @At("RETURN"))
+    public void onStateReplaced(World world, BlockPos pos, BlockState state, boolean moved, CallbackInfo ci) {
+        if (state.getBlock() instanceof CampfireBlock) {
+            world.updateComparators(pos, state.getBlock());
         }
     }
 }
