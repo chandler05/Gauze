@@ -25,3 +25,5 @@ MC-166272 - Comparator can't read inventory of campfire
 MC-183776 - After switching gamemodes using F3+F4, you need to press F3 twice to toggle the debug screen
 
 MC-185618 - Creepers can't be ignited with a fire charge
+
+MC-202070 - Quickly breaking and replacing an instantly breakable block in survival mode doesn't work properly

@@ -10,6 +10,7 @@
     "PathAwareEntity_M"
   ],
   "client": [
+    "ClientPlayerInteractionManager_M",
     "EntityRenderer_M",
     "FishingBobberEntityRenderer_M",
     "Keyboard_M",
